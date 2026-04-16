@@ -22,4 +22,8 @@ public static class Base
     {
         return Convert.ToSingle(obj);
     }
+    public static string str(object obj)
+    {
+        return Convert.ToString(obj);
+    }
 }

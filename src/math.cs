@@ -25,6 +25,9 @@ class math
             res *= i;
         return res;
     }
+    public static double sin(int x) => Math.Sin(x);
+    public static double cos(int x) => Math.Cos(x);
+    public static double tan(int x) => Math.Tan(x);
     public const double pi = Math.PI;
     public const double e = Math.E;
 }

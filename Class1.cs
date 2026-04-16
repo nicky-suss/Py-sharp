@@ -14,4 +14,8 @@ public static class Base
         }
         return System.Console.ReadLine();
     }
+    public static int Int(object obj)
+    {
+        return Convert.ToInt32(obj);
+    }
 }

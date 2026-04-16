@@ -16,7 +16,7 @@ public static class Base
     }
     public static int Int(object obj)
     {
-        return Convert.ToInt32(obj);
+        return (int)Convert.ToInt32(obj);
     }
     public static float Float(object obj)
     {

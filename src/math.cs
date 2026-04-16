@@ -10,7 +10,7 @@ class math
     {
         return Math.Pow(x, y);
     }
-    public static double celi(double x)
+    public static double ceil(double x)
     {
         return Math.Ceiling(x);
     }

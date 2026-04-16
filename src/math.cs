@@ -18,4 +18,6 @@ class math
     {
         return Math.Floor(x);
     }
+    public const double pi = Math.PI;
+    public const double e = Math.E;
 }

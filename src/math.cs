@@ -14,4 +14,8 @@ class math
     {
         return Math.Ceiling(x);
     }
+    public static double floor(double x)
+    {
+        return Math.Floor(x);
+    }
 }

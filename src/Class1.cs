@@ -10,9 +10,9 @@ public static class Base
     {
         if (obj != null)
         {
-            System.Console.WriteLine(obj);
+            System.Console.Write(obj);
         }
-        return System.Console.ReadLine();
+        return System.Console.ReadLine() ?? "";
     }
     public static int Int(object obj)
     {

@@ -18,4 +18,8 @@ public static class Base
     {
         return Convert.ToInt32(obj);
     }
+    public static float Float(object obj)
+    {
+        return Convert.ToSingle(obj);
+    }
 }

@@ -32,6 +32,7 @@ public static class Base
         if (obj is string s) return s.Length;
         return obj.Count;
     }
+    public static void exit() => System.Environment.Exit(0);
 
     public const bool True = true;
     public const bool False = false;

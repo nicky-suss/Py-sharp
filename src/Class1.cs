@@ -26,4 +26,7 @@ public static class Base
     {
         return Convert.ToString(obj);
     }
+
+    public const bool True = true;
+    public const bool False = false;
 }

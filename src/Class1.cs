@@ -26,6 +26,12 @@ public static class Base
     {
         return Convert.ToString(obj);
     }
+    public static int len(dynamic obj)
+    {
+        if (obj is System.Array a) return a.Length;
+        if (obj is string s) return s.Length;
+        return obj.Count;
+    }
 
     public const bool True = true;
     public const bool False = false;

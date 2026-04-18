@@ -3,7 +3,7 @@ namespace PySharp;
 /// <summary>
 /// Provides methods for math operations, similar to Python's math module.
 /// </summary>
-public class math
+public static class math
 {
     /// <summary>
     /// Returns the square root of a specified number.

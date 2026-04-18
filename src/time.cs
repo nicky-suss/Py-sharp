@@ -17,4 +17,9 @@ public static class time
     /// </summary>
     /// <returns>Current time in seconds.</returns>
     public static double Time() => System.DateTimeOffset.UtcNow.ToUnixTimeSeconds();
+    /// <summary>
+    /// Converts a time expressed in seconds since the epoch to a string representing local time.
+    /// </summary>
+    /// <returns>A string representation of the current local time.</returns>
+    public static string ctime() => DateTime.Now.ToString("ddd MMM dd HH:mm:ss yyyy");
 }

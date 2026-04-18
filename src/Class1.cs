@@ -64,6 +64,24 @@ public static class Base
     /// Terminates the current process and returns an exit code to the operating system.
     /// </summary>
     public static void exit() => System.Environment.Exit(0);
+    /// <summary>
+    /// Converts an integer number to a binary string prefixed with "0b".
+    /// </summary>
+    /// <param name="tobin">The integer to convert.</param>
+    /// <returns>A binary string representation of the number with "0b" prefix.</returns>
+    public static string bin(int tobin) => "0b" + System.Convert.ToString(tobin, 2);
+    /// <summary>
+    /// Converts an integer number to an octal string prefixed with "0o".
+    /// </summary>
+    /// <param name="tooct">The integer to convert.</param>
+    /// <returns>An octal string representation of the number with "0o" prefix.</returns>
+    public static string oct(int tooct) => "0o" + System.Convert.ToString(tooct, 8);
+    /// <summary>
+    /// Converts an integer number to a lowercase hexadecimal string prefixed with "0x".
+    /// </summary>
+    /// <param name="tohex">The integer to convert.</param>
+    /// <returns>A hexadecimal string representation of the number with "0x" prefix.</returns>
+    public static string hex(int tohex) => "0x" + System.Convert.ToString(tohex, 16);
 
     /// <summary>
     /// Represents the boolean value True.

@@ -21,4 +21,11 @@ public static class random
     /// <param name="b">The upper bound (inclusive).</param>
     /// <returns>A random integer within the specified range.</returns>
     public static int randint(int a, int b) => Rrand.Next(a, b);
+    /// <summary>
+    /// Returns a random floating point number N such that a &lt;= N &lt;= b.
+    /// </summary>
+    /// <param name="a">The lower bound.</param>
+    /// <param name="b">The upper bound.</param>
+    /// <returns>A random double-precision floating point number.</returns>
+    public static double uniform(double a, double b) => a + (Rrand.NextDouble() * (b - a));
 }

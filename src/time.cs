@@ -1,5 +1,8 @@
 namespace PySharp;
 
+/// <summary>
+/// Provides methods for time-related operations, similar to Python's time module.
+/// </summary>
 public class time
 {
     /// <summary>

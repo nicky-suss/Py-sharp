@@ -1,5 +1,8 @@
 ﻿namespace PySharp;
 
+/// <summary>
+/// Provides methods for output and input operations, similar to Python basic methods.
+/// </summary>
 public static class Base
 {
     /// <summary>

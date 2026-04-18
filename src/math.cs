@@ -2,22 +2,10 @@ namespace PySharp;
 
 class math
 {
-    public static double sqrt(int x)
-    {
-        return Math.Sqrt(x);
-    }
-    public static double pow(int x, int y)
-    {
-        return Math.Pow(x, y);
-    }
-    public static double ceil(double x)
-    {
-        return Math.Ceiling(x);
-    }
-    public static double floor(double x)
-    {
-        return Math.Floor(x);
-    }
+    public static double sqrt(double x) => Math.Sqrt(x);
+    public static double pow(int x, int y) => Math.Pow(x, y);
+    public static double ceil(double x) => Math.Ceiling(x);
+    public static double floor(double x) => Math.Floor(x);
     public static long factorial(int x)
     {
         long res = 1;

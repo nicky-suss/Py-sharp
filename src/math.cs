@@ -1,3 +1,5 @@
+#pragma warning disable CS8981
+
 namespace PySharp;
 
 /// <summary>

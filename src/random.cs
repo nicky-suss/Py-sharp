@@ -14,4 +14,11 @@ public static class random
     /// </summary>
     /// <returns>A double-precision floating point number greater than or equal to 0.0, and less than 1.0.</returns>
     public static double Random() => Rrand.NextDouble();
+    /// <summary>
+    /// Returns a random integer N such that a &lt;= N &lt;= b.
+    /// </summary>
+    /// <param name="a">The lower bound (inclusive).</param>
+    /// <param name="b">The upper bound (inclusive).</param>
+    /// <returns>A random integer within the specified range.</returns>
+    public static int randint(int a, int b) => Rrand.Next(a, b);
 }

@@ -1,6 +1,6 @@
 namespace PySharp;
 
-class math
+public class math
 {
     /// <summary>
     /// Returns the square root of a specified number.

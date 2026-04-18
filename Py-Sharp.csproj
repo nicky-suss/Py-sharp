@@ -5,6 +5,12 @@
     <RootNamespace>Py_Sharp</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Version>1.0.0</Version>
+  <Authors>nicky-suss</Authors>
+  <Description>Python-like syntax wrapper for C# developers.</Description>
+  <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  <RepositoryUrl>https://github.com/nicky-suss/Py-sharp</RepositoryUrl>
   </PropertyGroup>
 
 </Project>

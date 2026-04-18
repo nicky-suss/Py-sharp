@@ -27,9 +27,9 @@ class math
     }
     public static double radians(double degrees) => degrees * Math.PI / 180;
     public static double degrees(double radians) => radians * 180 / Math.PI;
-    public static double sin(int x) => Math.Sin(x);
-    public static double cos(int x) => Math.Cos(x);
-    public static double tan(int x) => Math.Tan(x);
+    public static double sin(double x) => Math.Sin(x);
+    public static double cos(double x) => Math.Cos(x);
+    public static double tan(double x) => Math.Tan(x);
     public const double pi = Math.PI;
     public const double e = Math.E;
 }

@@ -20,7 +20,7 @@ public static class random
     /// <param name="a">The lower bound (inclusive).</param>
     /// <param name="b">The upper bound (inclusive).</param>
     /// <returns>A random integer within the specified range.</returns>
-    public static int randint(int a, int b) => Rrand.Next(a, b);
+    public static int randint(int a, int b) => Rrand.Next(a, b + 1);
     /// <summary>
     /// Returns a random floating point number N such that a &lt;= N &lt;= b.
     /// </summary>

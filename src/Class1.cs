@@ -167,6 +167,7 @@ public static class Base
     /// </summary>
     /// <param name="nums"></param>
     /// <returns>The minimum value in the sequence.</returns>
+    /// <exception cref="System.ArgumentException"></exception>
     public static double min(params double[] nums)
     {
         if (nums.Length == 0)
@@ -179,7 +180,7 @@ public static class Base
     /// <param name="nums"></param>
     /// <returns>The maximum value in the sequence.</returns>
     /// <exception cref="System.ArgumentException"></exception>
-        public static double max(params double[] nums)
+    public static double max(params double[] nums)
     {
         if (nums.Length == 0)
             throw new System.ArgumentException("max() arg is an empty sequence");

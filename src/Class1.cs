@@ -84,6 +84,20 @@ public static class Base
     public static string hex(int tohex) => "0x" + System.Convert.ToString(tohex, 16);
 
     /// <summary>
+    /// Returns a copy of this string converted to lowercase.
+    /// </summary>
+    /// <param name="text"></param>
+    /// <returns>A string in lowercase.</returns>
+    public static string lower(this string text) => text.ToLower();
+
+    /// <summary>
+    /// Returns a copy of this string converted to uppercase.
+    /// </summary>
+    /// <param name="text"></param>
+    /// <returns>The uppercase equivalent of the current string.</returns>
+    public static string upper(this string text) => text.ToUpper();
+
+    /// <summary>
     /// Represents the boolean value True.
     /// </summary>
     public const bool True = true;

@@ -98,6 +98,18 @@ public static class Base
     public static string upper(this string text) => text.ToUpper();
 
     /// <summary>
+    /// Converts the first character of the string to uppercase and the rest to lowercase.
+    /// </summary>
+    /// <param name="text">The string to be capitalized</param>
+    /// <returns>A new string with the first character in uppercase and all others in lowercase.</returns>
+    public static string capitalize(this string text)
+    {
+        if (string.IsNullOrWhiteSpace(text))
+            return text;
+        return char.ToUpper(text[0]) + text.Substring(1).ToLower();
+    }
+
+    /// <summary>
     /// Represents the boolean value True.
     /// </summary>
     public const bool True = true;

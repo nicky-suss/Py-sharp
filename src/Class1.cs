@@ -163,6 +163,17 @@ public static class Base
     /// <returns>The sum of all numbers in the collection.</returns>
     public static double sum(this IEnumerable<double> nums) => nums.Sum();
     /// <summary>
+    /// Returns the minimum value in a sequence of double values.
+    /// </summary>
+    /// <param name="nums"></param>
+    /// <returns>The minimum value in the sequence.</returns>
+    public static double min(params double[] nums)
+    {
+        if (nums.Length == 0)
+            throw new System.ArgumentException("min() arg is an empty sequence");
+        return nums.Min();
+    }
+    /// <summary>
     /// Represents the boolean value True.
     /// </summary>
     public const bool True = true;

@@ -157,6 +157,12 @@ public static class Base
         return s.ToString();
     }
     /// <summary>
+    /// Sums the items of an iterable. (Python-style alias for Sum).
+    /// </summary>
+    /// <param name="nums">An iterable collection of numbers.</param>
+    /// <returns>The sum of all numbers in the collection.</returns>
+    public static double sum(this IEnumerable<double> nums) => nums.Sum();
+    /// <summary>
     /// Represents the boolean value True.
     /// </summary>
     public const bool True = true;

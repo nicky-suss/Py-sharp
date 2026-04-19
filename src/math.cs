@@ -1,5 +1,10 @@
 #pragma warning disable CS8981
 
+using System.Text;
+using System;
+using System.Linq;
+using System.Collections.Generic;
+
 namespace PySharp;
 
 /// <summary>

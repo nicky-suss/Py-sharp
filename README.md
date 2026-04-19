@@ -15,6 +15,8 @@ dotnet add package Py-Sharp -s ./
 - ```csharp
   using static PySharp.Base;
   using math = PySharp.math;
+  using time = PySharp.time;
+  using random = PySharp.random;
   ```
 
 ## Example:

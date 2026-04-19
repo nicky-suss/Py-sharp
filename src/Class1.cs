@@ -116,6 +116,7 @@ public static class Base
         if (string.IsNullOrWhiteSpace(text)) return text;
         return System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(text.ToLower());
     }
+    public static string strip(this string text) => text.Trim();
     /// <summary>
     /// Represents the boolean value True.
     /// </summary>

@@ -52,13 +52,20 @@ public static class Base
         return Convert.ToString(obj);
     }
     /// <summary>
-    /// Returns the length (the number of items) of an object.
+    /// Returns the number of items in an object (analogous to Python's len()).
+    /// Supports strings, arrays, and collections.
     /// </summary>
+    /// <param name="obj">The object to measure.</param>
+    /// <returns>The length or count of the object.</returns>
     public static int len(dynamic obj)
     {
-        if (obj is System.Array a) return a.Length;
+        if (obj == null) return 0;
         if (obj is string s) return s.Length;
-        return obj.Count;
+        if (obj is System.Array a) return a.Length;
+        if (obj is System.Collections.ICollection c) return c.Count;
+
+        try { return (int)obj.Count; }
+        catch { return 0; }
     }
     /// <summary>
     /// Terminates the current process and returns an exit code to the operating system.

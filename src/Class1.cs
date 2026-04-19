@@ -134,12 +134,11 @@ public static class Base
     /// <param name="text">The string to be trimmed.</param>
     /// <returns>The string that remains after all white-space characters are removed from the start and end.</returns>
     public static string strip(this string text) => text.Trim();
-
     /// <summary>
-    /// 
+    /// Returns a copy of the string with uppercase characters converted to lowercase and vice versa.
     /// </summary>
-    /// <param name="text"></param>
-    /// <returns></returns>
+    /// <param name="text">The string to swap cases.</param>
+    /// <returns>A new string with inverted case for each character.</returns>
     public static string swapcase(this string text)
     {
         if (string.IsNullOrWhiteSpace(text)) return text;

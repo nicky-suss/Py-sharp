@@ -174,6 +174,18 @@ public static class Base
         return nums.Min();
     }
     /// <summary>
+    /// Returns the maximum value in a sequence of double values.
+    /// </summary>
+    /// <param name="nums"></param>
+    /// <returns>The maximum value in the sequence.</returns>
+    /// <exception cref="System.ArgumentException"></exception>
+        public static double max(params double[] nums)
+    {
+        if (nums.Length == 0)
+            throw new System.ArgumentException("max() arg is an empty sequence");
+        return nums.Max();
+    }
+    /// <summary>
     /// Represents the boolean value True.
     /// </summary>
     public const bool True = true;

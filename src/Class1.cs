@@ -34,35 +34,38 @@ public static class Base
     /// <summary>
     /// Converts a value to an integer.
     /// </summary>
-    public static int Int(object obj)
+    public static int Int(object? obj)
     {
-        return (int)Convert.ToInt32(obj);
+        if (obj == null) return 0;
+
+        string? d = obj.ToString()?.Trim();
+        return Convert.ToInt32(d);
     }
     /// <summary>
     /// Converts a value to a single-precision floating-point number.
     /// </summary>
     /// <param name="obj">The value to convert.</param>
     /// <returns>A floating-point number equivalent to the input.</returns>
-    public static float Float(object obj)
+    public static float Float(object? obj)
     {
-        return Convert.ToSingle(obj);
+        if (obj == null) return 0.0f;
+
+        string? f = obj.ToString()?.Trim();
+        return Convert.ToSingle(f);
     }
     /// <summary>
     /// Converts a value to its string representation.
     /// </summary>
     /// <param name="obj">The value to convert.</param>
     /// <returns>The string representation of the object.</returns>
-    public static string str(object obj)
-    {
-        return Convert.ToString(obj);
-    }
+    public static string str(object? obj) => obj?.ToString() ?? "";
     /// <summary>
     /// Returns the number of items in an object (analogous to Python's len()).
     /// Supports strings, arrays, and collections.
     /// </summary>
     /// <param name="obj">The object to measure.</param>
     /// <returns>The length or count of the object.</returns>
-    public static int len(dynamic obj)
+    public static int len(dynamic? obj)
     {
         if (obj == null) return 0;
         if (obj is string s) return s.Length;
@@ -112,7 +115,7 @@ public static class Base
     /// <summary>
     /// Converts the first character of the string to uppercase and the rest to lowercase.
     /// </summary>
-    /// <param name="text">The string to be capitalized</param>
+    /// <param name="text">The string to be capitalized.</param>
     /// <returns>A new string with the first character in uppercase and all others in lowercase.</returns>
     public static string capitalize(this string text)
     {
@@ -161,7 +164,7 @@ public static class Base
     /// </summary>
     /// <param name="nums">An iterable collection of numbers.</param>
     /// <returns>The sum of all numbers in the collection.</returns>
-    public static double sum(this IEnumerable<double> nums) => nums.Sum();
+    public static double sum(IEnumerable<double> nums) => nums.Sum();
     /// <summary>
     /// Returns the minimum value in a sequence of double values.
     /// </summary>

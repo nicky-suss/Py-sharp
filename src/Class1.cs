@@ -123,6 +123,11 @@ public static class Base
         if (string.IsNullOrWhiteSpace(text)) return text;
         return System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(text.ToLower());
     }
+    /// <summary>
+    /// Returns a copy of the string with both leading and trailing white-space characters removed.
+    /// </summary>
+    /// <param name="text">The string to be trimmed.</param>
+    /// <returns>The string that remains after all white-space characters are removed from the start and end.</returns>
     public static string strip(this string text) => text.Trim();
     /// <summary>
     /// Represents the boolean value True.

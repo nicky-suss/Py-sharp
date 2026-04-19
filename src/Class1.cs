@@ -1,4 +1,6 @@
-﻿namespace PySharp;
+﻿using System.Text;
+
+namespace PySharp;
 
 /// <summary>
 /// Provides methods for output and input operations, similar to Python basic methods.
@@ -129,6 +131,29 @@ public static class Base
     /// <param name="text">The string to be trimmed.</param>
     /// <returns>The string that remains after all white-space characters are removed from the start and end.</returns>
     public static string strip(this string text) => text.Trim();
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="text"></param>
+    /// <returns></returns>
+    public static string swapcase(this string text)
+    {
+        if (string.IsNullOrWhiteSpace(text)) return text;
+
+        StringBuilder s = new(text.Length);
+
+        foreach (char c in text)
+        {
+            if (char.IsLower(c))
+                s.Append(char.ToUpper(c));
+            else if (char.IsUpper(c))
+                s.Append(char.ToLower(c));
+            else
+                s.Append(c);
+        }
+        return s.ToString();
+    }
     /// <summary>
     /// Represents the boolean value True.
     /// </summary>

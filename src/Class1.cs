@@ -108,7 +108,14 @@ public static class Base
             return text;
         return char.ToUpper(text[0]) + text.Substring(1).ToLower();
     }
-
+    /// <summary>
+    /// Returns a titlecased version of the string where words start with an uppercase character.
+    /// </summary>
+    public static string title(this string text)
+    {
+        if (string.IsNullOrWhiteSpace(text)) return text;
+        return System.Globalization.CultureInfo.CurrentCulture.TextInfo.ToTitleCase(text.ToLower());
+    }
     /// <summary>
     /// Represents the boolean value True.
     /// </summary>

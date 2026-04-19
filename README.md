@@ -12,7 +12,7 @@ dotnet add package Py-Sharp -s ./
 
 ## How to use
 - **type this to use PySharp methods:**
-- ```
+- ```csharp
   using static PySharp.Base;
   using math = PySharp.math;
   ```

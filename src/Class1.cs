@@ -194,6 +194,10 @@ public static class Base
         return nums.Max();
     }
     /// <summary>
+    /// Clears the console buffer and corresponding console window of display information.
+    /// </summary>
+    public static void clear() => System.Console.Clear();
+    /// <summary>
     /// Represents the boolean value True.
     /// </summary>
     public const bool True = true;

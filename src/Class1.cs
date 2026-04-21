@@ -23,6 +23,32 @@ public static class Base
     /// <param name="values">The objects to print. Can be of any type.</param>
     public static void printf(string sep = " ", string end = "\n", params object[] values) => System.Console.Write(string.Join(sep, values) + end);
     /// <summary>
+    /// Prints text with a specific foreground color and automatically resets to the default color.
+    /// </summary>
+    /// <param name="color">The color of the text.</param>
+    /// <param name="values">The object to print.</param>
+    public static void printfc(ConsoleColor color, params object[] values)
+    {
+        Console.ForegroundColor = color;
+        printf(" ", "", values);
+        Console.ResetColor();
+    }
+    /// <summary>
+    /// Prints text with a specific background color and automatically resets to the default color.
+    /// </summary>
+    /// <param name="color">The color of the background.</param>
+    /// <param name="values">The objects to print.</param>
+    public static void printbc(ConsoleColor color, params object[] values)
+    {
+        Console.BackgroundColor = color;
+        printf(" ", "", values);
+        Console.ResetColor();
+    }
+    /// <summary>
+    /// Plays the sound of a beep through the console speaker.
+    /// </summary>
+    public static void beep() => Console.Beep();
+    /// <summary>
     /// Displays a prompt and reads a line of characters from the standard input stream.
     /// </summary>
     /// <param name="obj">The message to display before reading input.</param>

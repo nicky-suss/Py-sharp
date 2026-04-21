@@ -145,4 +145,8 @@ public static class Color
         /// </summary>
         public static void White() => Console.BackgroundColor = ConsoleColor.White;
     }
+    /// <summary>
+    /// Sets the foreground and background console colors to their defaults.
+    /// </summary>
+    public static void reset() => Console.ResetColor();
 }

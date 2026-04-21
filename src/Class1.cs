@@ -11,13 +11,17 @@ namespace PySharp;
 public static class Base
 {
     /// <summary>
-    /// Prints an object to the text stream, followed by a line terminator
+    /// Prints the values to the standard output stream, separated by spaces and ending with a newline.
     /// </summary>
-    /// <param name="obj">The object to print</param>
-    public static void print(object? obj = null)
-    {
-        System.Console.WriteLine(obj ?? "");
-    }
+    /// <param name="values">The objects to print. Can be of any type.</param>
+    public static void print(params object[] values) => printf(" ", "", values);
+    /// <summary>
+    /// Prints the values to the standard output stream with customizable separator and end characters.
+    /// </summary>
+    /// <param name="sep">The string inserted between values. Default is a single space.</param>
+    /// <param name="end">The string appended after the last value. Default is a newline.</param>
+    /// <param name="values">The objects to print. Can be of any type.</param>
+    public static void printf(string sep = " ", string end = "\n", params object[] values) => System.Console.Write(string.Join(sep, values) + end);
     /// <summary>
     /// Displays a prompt and reads a line of characters from the standard input stream.
     /// </summary>

@@ -149,4 +149,13 @@ public static class Color
     /// Sets the foreground and background console colors to their defaults.
     /// </summary>
     public static void reset() => Console.ResetColor();
+    /// <summary>
+    /// Sets the title of the console window.
+    /// </summary>
+    public static void title(string text) => Console.Title = text;
+    /// <summary>
+    /// Makes the cursor visible or invisible
+    /// </summary>
+    /// <param name="is_visible"></param>
+    public static void cursor_visible(bool is_visible) => Console.CursorVisible = is_visible;
 }

@@ -23,26 +23,34 @@ public static class Base
     /// <param name="values">The objects to print. Can be of any type.</param>
     public static void printf(string sep = " ", string end = "\n", params object[] values) => System.Console.Write(string.Join(sep, values) + end);
     /// <summary>
-    /// Prints text with a specific foreground color and automatically resets to the default color.
+    /// Prints text with a specific foreground color.
     /// </summary>
     /// <param name="color">The color of the text.</param>
-    /// <param name="values">The object to print.</param>
-    public static void printfc(ConsoleColor color, params object[] values)
+    /// <param name="ResetColorOrNot">Use ResetColor() method or not.</param>
+    /// <param name="sep">The string inserted between values. Default is a single space.</param>
+    /// <param name="end">The string appended after the last value. Default is a newline.</param>
+    /// <param name="values">The objects to print.</param>
+    public static void printfc(ConsoleColor color, bool ResetColorOrNot, string sep = " ", string end = "\n", params object[] values)
     {
         Console.ForegroundColor = color;
-        printf(" ", "", values);
-        Console.ResetColor();
+        printf(sep, end, values);
+        if (ResetColorOrNot == true)
+            Console.ResetColor();
     }
     /// <summary>
-    /// Prints text with a specific background color and automatically resets to the default color.
+    /// Prints text with a specific foreground color.
     /// </summary>
-    /// <param name="color">The color of the background.</param>
+    /// <param name="color">The color of the text.</param>
+    /// <param name="ResetColorOrNot">Use ResetColor() method or not.</param>
+    /// <param name="sep">The string inserted between values. Default is a single space.</param>
+    /// <param name="end">The string appended after the last value. Default is a newline.</param>
     /// <param name="values">The objects to print.</param>
-    public static void printbc(ConsoleColor color, params object[] values)
+    public static void printbc(ConsoleColor color, bool ResetColorOrNot, string sep = " ", string end = "\n", params object[] values)
     {
         Console.BackgroundColor = color;
-        printf(" ", "", values);
-        Console.ResetColor();
+        printf(sep, end, values);
+        if (ResetColorOrNot == true)
+            Console.ResetColor();
     }
     /// <summary>
     /// Plays the sound of a beep through the console speaker.

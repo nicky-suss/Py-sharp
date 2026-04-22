@@ -67,6 +67,6 @@ public static class os
     /// <returns></returns>
     public static string getenv(string? name)
     {
-        return Environment.GetEnvironmentVariable(name);
+        return Environment.GetEnvironmentVariable(name) ?? "";
     }
 }

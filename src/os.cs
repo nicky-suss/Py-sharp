@@ -39,7 +39,7 @@ public static class os
     /// 
     /// </summary>
     /// <param name="path"></param>
-    public static void listdir(string path) => Directory.GetFileSystemEntries(path);
+    public static string[] listdir(string path) => Directory.GetFileSystemEntries(path);
     /// <summary>
     /// 
     /// </summary>

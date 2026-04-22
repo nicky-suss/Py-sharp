@@ -14,7 +14,7 @@ public static class Base
     /// Prints the values to the standard output stream, separated by spaces and ending with a newline.
     /// </summary>
     /// <param name="values">The objects to print. Can be of any type.</param>
-    public static void print(params object[] values) => printf(" ", "", values);
+    public static void print(params object[] values) => printf(" ", "\n", values);
     /// <summary>
     /// Prints the values to the standard output stream with customizable separator and end characters.
     /// </summary>

@@ -60,4 +60,13 @@ public static class os
             return "nt";
         return "posix";
     }
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="name"></param>
+    /// <returns></returns>
+    public static string getenv(string? name)
+    {
+        return Environment.GetEnvironmentVariable(name);
+    }
 }

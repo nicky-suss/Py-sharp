@@ -5,6 +5,7 @@ using System;
 using System.Linq;
 using System.Collections.Generic;
 using System.IO;
+using System.Runtime.InteropServices;
 
 namespace PySharp;
 
@@ -49,4 +50,14 @@ public static class os
     /// </summary>
     /// <param name="path"></param>
     public static void chdir(string path) => Environment.CurrentDirectory = path;
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <returns></returns>
+    public static string name()
+    {
+        if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            return "nt";
+        return "posix";
+    }
 }

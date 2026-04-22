@@ -17,6 +17,7 @@ dotnet add package Py-Sharp -s ./
   using math = PySharp.math;
   using time = PySharp.time;
   using random = PySharp.random;
+  using color = PySharp.Color;
   ```
 
 ## Example:

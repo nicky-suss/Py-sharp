@@ -44,4 +44,9 @@ public static class os
     /// </summary>
     /// <returns></returns>
     public static string getcwd() => Environment.CurrentDirectory;
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="path"></param>
+    public static void chdir(string path) => Environment.CurrentDirectory = path;
 }

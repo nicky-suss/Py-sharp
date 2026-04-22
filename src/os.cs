@@ -24,4 +24,9 @@ public static class os
             return true;
         return false;
     }
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="path"></param>
+    public static void mkdir(string path) => Directory.CreateDirectory(path);
 }

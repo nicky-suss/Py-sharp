@@ -29,4 +29,9 @@ public static class os
     /// </summary>
     /// <param name="path"></param>
     public static void mkdir(string path) => Directory.CreateDirectory(path);
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="path"></param>
+    public static void Remove(string path) => File.Delete(path);
 }

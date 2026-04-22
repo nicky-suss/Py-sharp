@@ -39,4 +39,9 @@ public static class os
     /// </summary>
     /// <param name="path"></param>
     public static void listdir(string path) => Directory.GetFileSystemEntries(path);
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <returns></returns>
+    public static string getcwd() => Environment.CurrentDirectory;
 }

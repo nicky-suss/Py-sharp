@@ -61,6 +61,16 @@ public static class math
     /// </summary>
     public static double tan(double x) => Math.Tan(x);
     /// <summary>
+    /// Returns a value indicating whether the specified number evaluates to negative or positive infinity.
+    /// </summary>
+    /// <returns>true if d evaluates to double.PositiveInfinity or double.NegativeInfinity; otherwise, false.</returns>
+    public static bool isinf(double x) => double.IsInfinity(x);
+    /// <summary>
+    /// Returns a value that indicates whether the specified value is not a number (double.NaN).
+    /// </summary>
+    /// <returns>true if d evaluates to double.NaN; otherwise, false.</returns>
+    public static bool isnan(double x) => double.IsNaN(x);
+    /// <summary>
     /// The mathematical constant PI.
     /// </summary>
     public static readonly double pi = Math.PI;

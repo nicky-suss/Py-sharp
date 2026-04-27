@@ -31,6 +31,8 @@ public static class os
             return false;
         }
         public static string join(params string[] parts) => Path.Combine(parts);
+        public static long getsize(string p) => new FileInfo(p).Length;
+        public static string abspath(string p) => Path.GetFullPath(p);
     }
 
     /// <summary>

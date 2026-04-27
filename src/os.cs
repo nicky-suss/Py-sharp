@@ -15,16 +15,24 @@ namespace PySharp;
 public static class os
 {
     /// <summary>
-    /// Returns true if path refers to an existing path or an open file descriptor.
+    /// 
     /// </summary>
-    /// <param name="path">The path to check.</param>
-    /// <returns>True if the directory or file exists; otherwise, false.</returns>
-    public static bool exists(string path)
+    public static class path
     {
-        if (Directory.Exists(path) || File.Exists(path))
-            return true;
-        return false;
+        /// <summary>
+        /// Returns true if path refers to an existing path or an open file descriptor.
+        /// </summary>
+        /// <param name="path">The path to check.</param>
+        /// <returns>True if the directory or file exists; otherwise, false.</returns>
+        public static bool exists(string path)
+        {
+            if (Directory.Exists(path) || File.Exists(path))
+                return true;
+            return false;
+        }
+        public static string join(params string[] parts) => Path.Combine(parts);
     }
+
     /// <summary>
     /// Create a directory named path with numeric mode.
     /// </summary>

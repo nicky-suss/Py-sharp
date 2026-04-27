@@ -40,7 +40,7 @@ public static class os
     /// </summary>
     /// <param name="path">The directory path to list.</param>
     /// <returns>An array of strings containing the names of the entries in the directory.</returns>
-    public static string[] listdir(string path) => Directory.GetFileSystemEntries(path);
+    public static string[] listdir(string path) => new DirectoryInfo(path).GetFileSystemInfos().Select(f => f.Name).ToArray();
     /// <summary>
     /// Returns a string representing the current working directory.
     /// </summary>

@@ -5,12 +5,15 @@
     <RootNamespace>PySharp</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>1.4.0</Version>
+    <Version>1.5.0</Version>
   <Authors>nicky-sus</Authors>
   <Description>Python-like syntax wrapper for C# developers.</Description>
   <GenerateDocumentationFile>true</GenerateDocumentationFile>
   <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   <RepositoryUrl>https://github.com/nicky-suss/Py-sharp</RepositoryUrl>
   </PropertyGroup>
+  <ItemGroup>
+  <None Include="Py-Sharp.props" Pack="true" PackagePath="build" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
 
 </Project>

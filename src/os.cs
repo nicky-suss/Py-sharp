@@ -15,7 +15,7 @@ namespace PySharp;
 public static class os
 {
     /// <summary>
-    /// 
+    /// Common pathname manipulations.
     /// </summary>
     public static class path
     {
@@ -30,8 +30,24 @@ public static class os
                 return true;
             return false;
         }
+        /// <summary>
+        /// Join one or more path components intelligently.
+        /// </summary>
+        /// <param name="parts">Path components to join.</param>
+        /// <returns>The concatenated path string.</returns>
         public static string join(params string[] parts) => Path.Combine(parts);
+        /// <summary>
+        /// Return the size, in bytes, of path.
+        /// </summary>
+        /// <param name="p">The path to the file.</param>
+        /// <returns>The size of the file in bytes.</returns>
+        /// <exception cref="FileNotFoundException">Thrown when the file does not exist.</exception>
         public static long getsize(string p) => new FileInfo(p).Length;
+        /// <summary>
+        /// Return a normalized absolutized version of the pathname path.
+        /// </summary>
+        /// <param name="p">The path to convert.</param>
+        /// <returns>The absolute path.</returns>
         public static string abspath(string p) => Path.GetFullPath(p);
     }
 

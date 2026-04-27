@@ -63,17 +63,17 @@ public static class math
     /// <summary>
     /// The mathematical constant PI.
     /// </summary>
-    public const double pi = Math.PI;
+    public static readonly double pi = Math.PI;
     /// <summary>
     /// The mathematical constant E.
     /// </summary>
-    public const double e = Math.E;
+    public static readonly double e = Math.E;
     /// <summary>
     /// Represents a value that is not a number (NaN). This field is constant.
     /// </summary>
-    public const double nan = double.NaN;
+    public static readonly double nan = double.NaN;
     /// <summary>
     /// Represents positive infinity. This field is constant.
     /// </summary>
-    public const double inf = double.PositiveInfinity;
+    public static readonly double inf = double.PositiveInfinity;
 }

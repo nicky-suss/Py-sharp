@@ -69,6 +69,6 @@ public static class os
     /// <returns>The value of the environment variable.</returns>
     public static string getenv(string? name)
     {
-        return Environment.GetEnvironmentVariable(name) ?? "";
+        return Environment.GetEnvironmentVariable(name ?? "") ?? "";
     }
 }

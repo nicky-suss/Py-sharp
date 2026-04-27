@@ -68,4 +68,12 @@ public static class math
     /// The mathematical constant E.
     /// </summary>
     public const double e = Math.E;
+    /// <summary>
+    /// Represents a value that is not a number (NaN). This field is constant.
+    /// </summary>
+    public const double nan = double.NaN;
+    /// <summary>
+    /// Represents positive infinity. This field is constant.
+    /// </summary>
+    public const double inf = double.PositiveInfinity;
 }

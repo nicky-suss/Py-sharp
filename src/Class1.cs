@@ -103,16 +103,12 @@ public static class Base
     /// </summary>
     /// <param name="obj">The object to measure.</param>
     /// <returns>The length or count of the object.</returns>
-    public static int len(dynamic? obj)
+    public static int len(object? obj) => obj switch
     {
-        if (obj == null) return 0;
-        if (obj is string s) return s.Length;
-        if (obj is System.Array a) return a.Length;
-        if (obj is System.Collections.ICollection c) return c.Count;
-
-        try { return (int)obj.Count; }
-        catch { return 0; }
-    }
+        string s => s.Length,
+        System.Collections.ICollection c => c.Count,
+        _ => 0
+    };
     /// <summary>
     /// Terminates the current process and returns an exit code to the operating system.
     /// </summary>

@@ -5,147 +5,147 @@ namespace PySharp;
 /// <summary>
 /// Provides methods for color operations.
 /// </summary>
-public static class Color
+public static class color
 {
     /// <summary>
     /// Sets the foreground color of the console.
     /// </summary>
-    public static class Fore
+    public static class fore
     {
         /// <summary>
         /// The color black.
         /// </summary>
-        public static void Black() => Console.ForegroundColor = ConsoleColor.Black;
+        public static object? black { get { Console.ForegroundColor = ConsoleColor.Black; return null; } }
         /// <summary>
         /// The color dark blue.
         /// </summary>
-        public static void DarkBlue() => Console.ForegroundColor = ConsoleColor.DarkBlue;
+        public static object? dark_blue { get { Console.ForegroundColor = ConsoleColor.DarkBlue; return null; } }
         /// <summary>
         /// The color dark green.
         /// </summary>
-        public static void DarkGreen() => Console.ForegroundColor = ConsoleColor.DarkGreen;
+        public static object? dark_green { get { Console.ForegroundColor = ConsoleColor.DarkGreen; return null; } }
         /// <summary>
         /// The color dark cyan (dark blue-green).
         /// </summary>
-        public static void DarkCyan() => Console.ForegroundColor = ConsoleColor.DarkCyan;
+        public static object? dark_cyan { get { Console.ForegroundColor = ConsoleColor.DarkCyan; return null; } }
         /// <summary>
         /// The color dark red.
         /// </summary>
-        public static void DarkRed() => Console.ForegroundColor = ConsoleColor.DarkRed;
+        public static object? dark_red { get { Console.ForegroundColor = ConsoleColor.DarkRed; return null; } }
         /// <summary>
         /// The color dark magenta (dark purplish-red).
         /// </summary>
-        public static void DarkMagenta() => Console.ForegroundColor = ConsoleColor.DarkMagenta;
+        public static object? dark_magenta { get { Console.ForegroundColor = ConsoleColor.DarkMagenta; return null; } }
         /// <summary>
         /// The color dark yellow (ochre).
         /// </summary>
-        public static void DarkYellow() => Console.ForegroundColor = ConsoleColor.DarkYellow;
+        public static object? dark_yellow { get { Console.ForegroundColor = ConsoleColor.DarkYellow; return null; } }
         /// <summary>
         /// The color gray.
         /// </summary>
-        public static void Gray() => Console.ForegroundColor = ConsoleColor.Gray;
+        public static object? gray { get { Console.ForegroundColor = ConsoleColor.Gray; return null; } }
         /// <summary>
         /// The color dark gray.
         /// </summary>
-        public static void DarkGray() => Console.ForegroundColor = ConsoleColor.DarkGray;
+        public static object? dark_gray { get { Console.ForegroundColor = ConsoleColor.DarkGray; return null; } }
         /// <summary>
         /// The color blue.
         /// </summary>
-        public static void Blue() => Console.ForegroundColor = ConsoleColor.Blue;
+        public static object? blue { get { Console.ForegroundColor = ConsoleColor.Blue; return null; } }
         /// <summary>
         /// The color green.
         /// </summary>
-        public static void Green() => Console.ForegroundColor = ConsoleColor.Green;
+        public static object? green { get { Console.ForegroundColor = ConsoleColor.Green; return null; } }
         /// <summary>
         /// The color cyan (blue-green).
         /// </summary>
-        public static void Cyan() => Console.ForegroundColor = ConsoleColor.Cyan;
+        public static object? cyan { get { Console.ForegroundColor = ConsoleColor.Cyan; return null; } }
         /// <summary>
         /// The color red.
         /// </summary>
-        public static void Red() => Console.ForegroundColor = ConsoleColor.Red;
+        public static object? red { get { Console.ForegroundColor = ConsoleColor.Red; return null; } }
         /// <summary>
         /// The color magenta (purplish-red).
         /// </summary>
-        public static void Magenta() => Console.ForegroundColor = ConsoleColor.Magenta;
+        public static object? magenta { get { Console.ForegroundColor = ConsoleColor.Magenta; return null; } }
         /// <summary>
         /// The color yellow.
         /// </summary>
-        public static void Yellow() => Console.ForegroundColor = ConsoleColor.Yellow;
+        public static object? yellow { get { Console.ForegroundColor = ConsoleColor.Yellow; return null; } }
         /// <summary>
         /// The color White
         /// </summary>
-        public static void White() => Console.ForegroundColor = ConsoleColor.White;
+        public static object? white { get { Console.ForegroundColor = ConsoleColor.White; return null; } }
     }
     /// <summary>
     /// Sets the background color of the console
     /// </summary>
-    public static class Back
+    public static class back
     {
         /// <summary>
         /// The color black.
         /// </summary>
-        public static void Black() => Console.BackgroundColor = ConsoleColor.Black;
+        public static object? black { get { Console.BackgroundColor = ConsoleColor.Black; return null; } }
         /// <summary>
         /// The color dark blue.
         /// </summary>
-        public static void DarkBlue() => Console.BackgroundColor = ConsoleColor.DarkBlue;
+        public static object? dark_blue { get { Console.BackgroundColor = ConsoleColor.DarkBlue; return null; } }
         /// <summary>
         /// The color dark green.
         /// </summary>
-        public static void DarkGreen() => Console.BackgroundColor = ConsoleColor.DarkGreen;
+        public static object? dark_green { get { Console.BackgroundColor = ConsoleColor.DarkGreen; return null; } }
         /// <summary>
         /// The color dark cyan (dark blue-green).
         /// </summary>
-        public static void DarkCyan() => Console.BackgroundColor = ConsoleColor.DarkCyan;
+        public static object? dark_cyan { get { Console.BackgroundColor = ConsoleColor.DarkCyan; return null; } }
         /// <summary>
         /// The color dark red
         /// </summary>
-        public static void DarkRed() => Console.BackgroundColor = ConsoleColor.DarkRed;
+        public static object? dark_red { get { Console.BackgroundColor = ConsoleColor.DarkRed; return null; } }
         /// <summary>
         /// The color dark magenta (dark purplish-red).
         /// </summary>
-        public static void DarkMagenta() => Console.BackgroundColor = ConsoleColor.DarkMagenta;
+        public static object? dark_magenta { get { Console.BackgroundColor = ConsoleColor.DarkMagenta; return null; } }
         /// <summary>
         /// The color dark yellow (ochre).
         /// </summary>
-        public static void DarkYellow() => Console.BackgroundColor = ConsoleColor.DarkYellow;
+        public static object? dark_yellow { get { Console.BackgroundColor = ConsoleColor.DarkYellow; return null; } }
         /// <summary>
         /// The color gray.
         /// </summary>
-        public static void Gray() => Console.BackgroundColor = ConsoleColor.Gray;
+        public static object? gray { get { Console.BackgroundColor = ConsoleColor.Gray; return null; } }
         /// <summary>
         /// The color dark gray.
         /// </summary>
-        public static void DarkGray() => Console.BackgroundColor = ConsoleColor.DarkGray;
+        public static object? dark_gray { get { Console.BackgroundColor = ConsoleColor.DarkGray; return null; } }
         /// <summary>
         /// The color blue.
         /// </summary>
-        public static void Blue() => Console.BackgroundColor = ConsoleColor.Blue;
+        public static object? blue { get { Console.BackgroundColor = ConsoleColor.Blue; return null; } }
         /// <summary>
         /// The color green
         /// </summary>
-        public static void Green() => Console.BackgroundColor = ConsoleColor.Green;
+        public static object? green { get { Console.BackgroundColor = ConsoleColor.Green; return null; } }
         /// <summary>
         /// The color cyan (blue-green).
         /// </summary>
-        public static void Cyan() => Console.BackgroundColor = ConsoleColor.Cyan;
+        public static object? cyan { get { Console.BackgroundColor = ConsoleColor.Cyan; return null; } }
         /// <summary>
         /// The color red.
         /// </summary>
-        public static void Red() => Console.BackgroundColor = ConsoleColor.Red;
+        public static object? red { get { Console.BackgroundColor = ConsoleColor.Red; return null; } }
         /// <summary>
         /// The color magenta (purplish-red).
         /// </summary>
-        public static void Magenta() => Console.BackgroundColor = ConsoleColor.Magenta;
+        public static object? magenta { get { Console.BackgroundColor = ConsoleColor.Magenta; return null; } }
         /// <summary>
         /// The color yellow.
         /// </summary>
-        public static void Yellow() => Console.BackgroundColor = ConsoleColor.Yellow;
+        public static object? yellow { get { Console.BackgroundColor = ConsoleColor.Yellow; return null; } }
         /// <summary>
         /// The color white.
         /// </summary>
-        public static void White() => Console.BackgroundColor = ConsoleColor.White;
+        public static object? white { get { Console.BackgroundColor = ConsoleColor.White; return null; } }
     }
     /// <summary>
     /// Sets the foreground and background console colors to their defaults.

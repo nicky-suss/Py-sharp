@@ -5,7 +5,7 @@
     <RootNamespace>PySharp</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>2.0.1</Version>
+    <Version>2.0.2</Version>
   <Authors>nicky_sus</Authors>
   <Description>Python-like syntax wrapper for C# developers.</Description>
 
@@ -16,8 +16,10 @@
   <RepositoryUrl>https://github.com/nicky-suss/Py-sharp</RepositoryUrl>
 
    <PackageTags>wrapper;helper;library;csharp;dotnet;nuget-package;python-like</PackageTags>
+   <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup>
+  <None Include="README.md" Pack="true" PackagePath="\" />
   <None Include="Py-Sharp.props" Pack="true" PackagePath="build" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 

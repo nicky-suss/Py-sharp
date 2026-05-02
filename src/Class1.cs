@@ -228,6 +228,14 @@ public static class Base
     /// </summary>
     public static void clear() => System.Console.Clear();
     /// <summary>
+    /// Gets the Type of the current instance.
+    /// </summary>
+    public static Type type(object obj) => obj.GetType();
+    /// <summary>
+    /// Rounds a double-precision floating-point value to a specified number of fractional digits, and rounds midpoint values to the nearest even number.
+    /// </summary>
+    public static double round(double x, int digits) => Math.Round(x, digits);
+    /// <summary>
     /// Represents the boolean value True.
     /// </summary>
     public const bool True = true;

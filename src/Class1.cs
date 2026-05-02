@@ -194,11 +194,29 @@ public static class Base
         return s.ToString();
     }
     /// <summary>
-    /// Sums the items of an iterable. (Python-style alias for Sum).
+    /// Sums the items of an iterable.
     /// </summary>
     /// <param name="nums">An iterable collection of numbers.</param>
     /// <returns>The sum of all numbers in the collection.</returns>
     public static double sum(IEnumerable<double> nums) => nums.Sum();
+    /// <summary>
+    /// Sums the items of an iterable.
+    /// </summary>
+    /// <param name="nums">An iterable collection of numbers.</param>
+    /// <returns>The sum of all numbers in the collection.</returns>
+    public static int sum(IEnumerable<int> nums) => nums.Sum();
+    /// <summary>
+    /// Sums the items of an iterable.
+    /// </summary>
+    /// <param name="nums">An iterable collection of numbers.</param>
+    /// <returns>The sum of all numbers in the collection.</returns>
+    public static float sum(IEnumerable<float> nums) => nums.Sum();
+    /// <summary>
+    /// Sums the items of an iterable.
+    /// </summary>
+    /// <param name="nums">An iterable collection of numbers.</param>
+    /// <returns>The sum of all numbers in the collection.</returns>
+    public static long sum(IEnumerable<long> nums) => nums.Sum();
     /// <summary>
     /// Returns the minimum value in a sequence of double values.
     /// </summary>

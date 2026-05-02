@@ -5,7 +5,7 @@
     <RootNamespace>PySharp</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>2.0.2</Version>
+    <Version>2.1.0</Version>
   <Authors>nicky_sus</Authors>
   <Description>Python-like syntax wrapper for C# developers.</Description>
 

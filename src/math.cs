@@ -23,7 +23,7 @@ public static class math
     /// <summary>
     /// Returns a specified number raised to the specified power.
     /// </summary>
-    public static double pow(int x, int y) => Math.Pow(x, y);
+    public static double pow(double x, double y) => Math.Pow(x, y);
     /// <summary>
     /// Returns the smallest integral value that is greater than or equal to the specified number.
     /// </summary>

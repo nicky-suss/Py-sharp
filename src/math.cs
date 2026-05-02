@@ -86,4 +86,5 @@ public static class math
     /// Represents positive infinity. This field is constant.
     /// </summary>
     public static readonly double inf = double.PositiveInfinity;
+    public static readonly double tau = Math.Tau;
 }

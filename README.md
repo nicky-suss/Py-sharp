@@ -41,4 +41,4 @@ print("Result:", result);
 
 
 
-![XML Hints](https://github.com/user-attachments/assets/ddc741b9-8f38-4a10-b6e4-f2753670eedd)
+![XML Hints](https://raw.githubusercontent.com/nicky-suss/Py-sharp/refs/heads/main/images/0418.gif)

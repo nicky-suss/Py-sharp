@@ -17,6 +17,10 @@ public static class math
     /// </summary>
     public static double sqrt(double x) => Math.Sqrt(x);
     /// <summary>
+    /// Returns the cube root of x.
+    /// </summary>
+    public static double cbrt(double x) => Math.Cbrt(x);
+    /// <summary>
     /// Returns a specified number raised to the specified power.
     /// </summary>
     public static double pow(int x, int y) => Math.Pow(x, y);
@@ -114,5 +118,8 @@ public static class math
     /// Represents positive infinity. This field is constant.
     /// </summary>
     public static readonly double inf = double.PositiveInfinity;
+    /// <summary>
+    /// Represents the number of radians in one turn, specified by the constant, τ.
+    /// </summary>
     public static readonly double tau = Math.Tau;
 }

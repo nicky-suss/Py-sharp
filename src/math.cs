@@ -61,6 +61,34 @@ public static class math
     /// </summary>
     public static double tan(double x) => Math.Tan(x);
     /// <summary>
+    /// Returns the arc cosine of x, in radians.
+    /// </summary>
+    public static double acos(double x) => Math.Acos(x);
+    /// <summary>
+    /// Returns the inverse hyperbolic cosine of x.
+    /// </summary>
+    public static double acosh(double x) => Math.Acosh(x);
+    /// <summary>
+    /// Returns the arc sine of x, in radians.
+    /// </summary>
+    public static double asin(double x) => Math.Asin(x);
+    /// <summary>
+    /// Returns the inverse hyperbolic sine of x.
+    /// </summary>
+    public static double asinh(double x) => Math.Asinh(x);
+    /// <summary>
+    /// Returns the arc tangent of x, in radians.
+    /// </summary>
+    public static double atan(double x) => Math.Atan(x);
+    /// <summary>
+    /// Returns the arc tangent of y/x, in radians.
+    /// </summary>
+    public static double atan2(double y, double x) => Math.Atan2(y, x);
+    /// <summary>
+    /// Returns the inverse hyperbolic tangent of x.
+    /// </summary>
+    public static double atanh(double x) => Math.Atanh(x);
+    /// <summary>
     /// Returns a value indicating whether the specified number evaluates to negative or positive infinity.
     /// </summary>
     /// <returns>true if d evaluates to double.PositiveInfinity or double.NegativeInfinity; otherwise, false.</returns>

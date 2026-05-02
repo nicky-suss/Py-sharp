@@ -23,9 +23,15 @@ dotnet add package Py-Sharp -s ./
 ## Example:
 
 ```csharp
-print("Hello! Let's calculate:");
-int x = Int(input("Enter x: "));
-print("Square root is: " + math.sqrt(x));
+color.fore.yellow();
+int numtofind = Int(input("type first number: "));
+print();
+int num2tofind = Int(input("type second number: "));
+color.reset();
+print("Calculating...");
+time.sleep(2);
+int result = numtofind + num2tofind;
+print("Result:", result);
 ```
 
 

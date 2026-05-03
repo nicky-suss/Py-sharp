@@ -1,6 +1,6 @@
 # PySharp
-
-**🐍 This library allows you to use [Python](https://python.org) methods such as print, input and more in [C#!](https://dotnet.microsoft.com/en-us/languages/csharp)**
+![NuGet Version](https://img.shields.io/nuget/v/Py-Sharp) ![NuGet Downloads](https://img.shields.io/nuget/dt/Py-Sharp)
+### **🐍 This library allows you to use [Python](https://python.org) methods such as print, input and more in [C#!](https://dotnet.microsoft.com/en-us/languages/csharp)**
 
 ## Installation
 - type this command:
@@ -8,7 +8,7 @@
 dotnet add package Py-Sharp
 ```
 ## Alternative
-- Go to [Releases](https://github.com/nicky-suss/Py-sharp/releases) and install the latest .nupkg file.
+- Go to [Releases](https://github.com/nicky-suss/Py-sharp/releases) or [NuGet](https://www.nuget.org/packages/Py-Sharp) and install the latest .nupkg file.
 - put the .nupkg in any folder in your project (e.g. /libs, it doesn't matter)
 - type this command:
 ```

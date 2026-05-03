@@ -35,7 +35,7 @@ public static class random
     /// <returns>A random double-precision floating point number.</returns>
     public static double uniform(double a, double b) => a + (Rrand.NextDouble() * (b - a));
     /// <summary>
-    /// 
+    /// Returns a random element from the non-empty sequence.
     /// </summary>
     public static T? choice<T>(IList<T>? l)
     {
@@ -46,7 +46,7 @@ public static class random
         return default;
     }
     /// <summary>
-    /// 
+    /// Shuffles the list in-place.
     /// </summary>
     public static void shuffle<T>(List<T> list)
     {
@@ -54,14 +54,14 @@ public static class random
         System.Random.Shared.Shuffle(span);
     }
     /// <summary>
-    /// 
+    /// Shuffles the array in-place.
     /// </summary>
     public static void shuffle<T>(T[] array)
     {
         System.Random.Shared.Shuffle(array);
     }
     /// <summary>
-    /// 
+    /// Returns a k-length list of unique elements chosen from the array (sampling without replacement).
     /// </summary>
     public static T[] sample<T>(T[] array, int k)
     {
@@ -71,7 +71,7 @@ public static class random
         return arraynew[..k];
     }
     /// <summary>
-    /// 
+    /// Returns a k-length list of elements chosen from the array with replacement.
     /// </summary>
     public static T[] choices<T>(T[] array, int k)
     {

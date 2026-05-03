@@ -14,20 +14,12 @@ public static class Base
     /// Prints the values to the standard output stream, separated by spaces and ending with a newline.
     /// </summary>
     /// <param name="values">The objects to print. Can be of any type.</param>
-    public static void print(params object[] values) => printf(" ", "\n", values);
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <typeparam name="T"></typeparam>
-    /// <param name="collections"></param>
-    public static void print<T>(IEnumerable<T> collections)
+    public static void print(params object[] values)
     {
-        if (collections == null)
-        {
-            System.Console.WriteLine("null");
-            return;
-        }
-        System.Console.WriteLine("[" + string.Join(", ", collections) + "]");
+        if (values.Length == 1 && values[0] is System.Collections.IEnumerable collection && values[0] is not string)
+            System.Console.WriteLine("[" + string.Join(", ", collection.Cast<object>()) + "]");
+        else
+            printf(" ", "\n", values);
     }
     /// <summary>
     /// Prints the values to the standard output stream with customizable separator and end characters.

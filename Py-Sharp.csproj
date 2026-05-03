@@ -20,7 +20,7 @@
   </PackageReleaseNotes>
   <RepositoryUrl>https://github.com/nicky-suss/Py-sharp</RepositoryUrl>
 
-   <PackageTags>wrapper;helper;library;csharp;dotnet;nuget-package;python-like</PackageTags>
+   <PackageTags>python;syntax;wrapper;helper;utility;console;print;easy;beginner-friendly;shorthand</PackageTags>
    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup>

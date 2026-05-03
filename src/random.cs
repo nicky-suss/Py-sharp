@@ -4,6 +4,7 @@ using System.Text;
 using System;
 using System.Linq;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 
 namespace PySharp;
 
@@ -44,5 +45,20 @@ public static class random
             return randomList?.ToString();
         }
         return null;
+    }
+    /// <summary>
+    /// 
+    /// </summary>
+    public static void shuffle<T>(this List<T> list)
+    {
+        Span<T> span = CollectionsMarshal.AsSpan(list);
+        System.Random.Shared.Shuffle(span);
+    }
+    /// <summary>
+    /// 
+    /// </summary>
+    public static void shuffle<T>(this T[] array)
+    {
+        System.Random.Shared.Shuffle(array);
     }
 }

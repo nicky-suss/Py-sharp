@@ -33,4 +33,16 @@ public static class random
     /// <param name="b">The upper bound.</param>
     /// <returns>A random double-precision floating point number.</returns>
     public static double uniform(double a, double b) => a + (Rrand.NextDouble() * (b - a));
+    /// <summary>
+    /// 
+    /// </summary>
+    public static string? choice(object? obj)
+    {
+        if (obj is System.Collections.IList l && l.Count > 0)
+        {
+            object? randomList = l[Rrand.Next(l.Count)];
+            return randomList?.ToString();
+        }
+        return null;
+    }
 }

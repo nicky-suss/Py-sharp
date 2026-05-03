@@ -37,19 +37,18 @@ public static class random
     /// <summary>
     /// 
     /// </summary>
-    public static string? choice(object? obj)
+    public static T? choice<T>(IList<T>? l)
     {
-        if (obj is System.Collections.IList l && l.Count > 0)
+        if (l != null && l.Count > 0)
         {
-            object? randomList = l[Rrand.Next(l.Count)];
-            return randomList?.ToString();
+            return l[Rrand.Next(l.Count)];
         }
-        return null;
+        return default;
     }
     /// <summary>
     /// 
     /// </summary>
-    public static void shuffle<T>(this List<T> list)
+    public static void shuffle<T>(List<T> list)
     {
         Span<T> span = CollectionsMarshal.AsSpan(list);
         System.Random.Shared.Shuffle(span);
@@ -57,24 +56,26 @@ public static class random
     /// <summary>
     /// 
     /// </summary>
-    public static void shuffle<T>(this T[] array)
+    public static void shuffle<T>(T[] array)
     {
         System.Random.Shared.Shuffle(array);
     }
     /// <summary>
     /// 
     /// </summary>
-    public static string sample<T>(this T[] array, int k)
+    public static T[] sample<T>(T[] array, int k)
     {
-        System.Random.Shared.Shuffle(array);
-        return string.Join(", ", array[..k]);
+        T[] arraynew = array.ToArray();
+        if(k > arraynew.Length) { k = arraynew.Length; }
+        System.Random.Shared.Shuffle(arraynew);
+        return arraynew[..k];
     }
     /// <summary>
     /// 
     /// </summary>
-    public static string choices<T>(this T[] array, int k)
+    public static T[] choices<T>(T[] array, int k)
     {
         T[] result = System.Random.Shared.GetItems(array, k);
-        return string.Join(", ", result);
+        return result;
     }
 }

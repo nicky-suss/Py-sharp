@@ -61,4 +61,12 @@ public static class random
     {
         System.Random.Shared.Shuffle(array);
     }
+    /// <summary>
+    /// 
+    /// </summary>
+    public static string sample<T>(this T[] array, int k)
+    {
+        System.Random.Shared.Shuffle(array);
+        return string.Join(", ", array[..k]);
+    }
 }

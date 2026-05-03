@@ -69,4 +69,12 @@ public static class random
         System.Random.Shared.Shuffle(array);
         return string.Join(", ", array[..k]);
     }
+    /// <summary>
+    /// 
+    /// </summary>
+    public static string choices<T>(this T[] array, int k)
+    {
+        T[] result = System.Random.Shared.GetItems(array, k);
+        return string.Join(", ", result);
+    }
 }

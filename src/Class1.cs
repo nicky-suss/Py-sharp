@@ -16,6 +16,20 @@ public static class Base
     /// <param name="values">The objects to print. Can be of any type.</param>
     public static void print(params object[] values) => printf(" ", "\n", values);
     /// <summary>
+    /// 
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <param name="collections"></param>
+    public static void print<T>(IEnumerable<T> collections)
+    {
+        if (collections == null)
+        {
+            System.Console.WriteLine("null");
+            return;
+        }
+        System.Console.WriteLine("[" + string.Join(", ", collections) + "]");
+    }
+    /// <summary>
     /// Prints the values to the standard output stream with customizable separator and end characters.
     /// </summary>
     /// <param name="sep">The string inserted between values. Default is a single space.</param>

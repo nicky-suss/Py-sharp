@@ -1,5 +1,6 @@
 # PySharp
 
+**🐍 This library allows you to use [Python](https://python.org) methods such as print, input and more in [C#!](https://dotnet.microsoft.com/en-us/languages/csharp)**
 
 ## Installation
 - type this command:

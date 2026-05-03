@@ -5,7 +5,7 @@
     <RootNamespace>PySharp</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>2.1.0</Version>
+    <Version>2.2.0</Version>
   <Authors>nicky_sus</Authors>
   <Description>Python-like syntax wrapper for C# developers.</Description>
 
@@ -13,6 +13,11 @@
 
   <GenerateDocumentationFile>true</GenerateDocumentationFile>
   <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  <PackageReleaseNotes>
+  2.2.0:
+  - Added more random methods such as choice, shuffle, sample, choices.
+  - Improved print method so you can easily print an array out.
+  </PackageReleaseNotes>
   <RepositoryUrl>https://github.com/nicky-suss/Py-sharp</RepositoryUrl>
 
    <PackageTags>wrapper;helper;library;csharp;dotnet;nuget-package;python-like</PackageTags>
